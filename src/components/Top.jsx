@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import lions from "../img/lions.png";
 
 const Top = () => {
@@ -6,10 +7,12 @@ const Top = () => {
     <div>
       <nav className="bg-dark">
         <div className="px-52 py-3 flex justify-between items-center">
-          <div className="flex cursor-pointer">
-            <img src={lions} alt="coat of arm" className="w-10 h-10" />
-            <h2 className="font-body text-3xl text-white pl-2">GOV.GM</h2>
-          </div>
+          <Link to={`/`}>
+            <div className="flex cursor-pointer">
+              <img src={lions} alt="coat of arm" className="w-10 h-10" />
+              <h2 className="font-body text-3xl text-white pl-2">GOV.GM</h2>
+            </div>
+          </Link>
           <div className="flex justify-between items-center">
             <div className="flex items-center cursor-pointer">
               <svg
@@ -96,7 +99,7 @@ const Top = () => {
             <h3 className="pb-4 font-bold text-2xl font-body">Search</h3>
             <input placeholder="type here..." className="w-96 h-8 p-3" />
             <div className="flex justify-start">
-              <div className="bg-primary py-2 px-3 cursor-pointer mt-3 font-bold text-white">
+              <div className="bg-primary py-2 px-5 cursor-pointer mt-3 font-bold text-white hover:bg-dark transition ease-out duration-500">
                 search
               </div>
             </div>

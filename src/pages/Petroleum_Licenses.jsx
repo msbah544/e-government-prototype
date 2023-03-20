@@ -10,14 +10,14 @@ const Licenses = () => {
       <Top />
       <main class="px-52">
         <div class="">
-          <h3 class="pb-4 font-bold text-2xl py-5 font-body">Licenses</h3>
+          <h3 class="pb-4 font-bold text-2xl py-5 font-body">Petroleum Licenses</h3>
           {/*row*/}
           <div class="py-5 grid grid-cols-3 gap-6">
             {/*item*/}
-            <Link to={`/licenses/petroleum_licenses`}>
+            <Link to={`/licenses/petroleum_licenses/retailer`}>
             <div class="border-t-2 border-t-gray-200 cursor-pointer">
               <div class="flex justify-between items-center">
-                <h3 class="text-primary font-bold text-xl">Petroleum</h3>
+                <h3 class="text-primary font-bold text-xl">Retailers</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -33,13 +33,12 @@ const Licenses = () => {
                   />
                 </svg>
               </div>
-              <div class="text-gray-700">Retailers, Re-exporters, e.t.c..</div>
             </div>
             </Link>
             {/*item*/}
             <div class="border-t-2 border-t-gray-200 cursor-pointer">
               <div class="flex justify-between items-center">
-                <h3 class="text-primary font-bold text-xl">Business</h3>
+                <h3 class="text-primary font-bold text-xl">Re-exporters</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -55,12 +54,11 @@ const Licenses = () => {
                   />
                 </svg>
               </div>
-              <div class="text-gray-700">Business,Companies, e.t.c..</div>
             </div>
             {/*item*/}
             <div class="border-t-2 border-t-gray-200 cursor-pointer">
               <div class="flex justify-between items-center">
-                <h3 class="text-primary font-bold text-xl">Fisheries</h3>
+                <h3 class="text-primary font-bold text-xl">Importers</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -75,9 +73,6 @@ const Licenses = () => {
                     d="M8.25 4.5l7.5 7.5-7.5 7.5"
                   />
                 </svg>
-              </div>
-              <div class="text-gray-700">
-                Vessel Licenses,Inspection, e.t.c..
               </div>
             </div>
           </div>
@@ -86,7 +81,7 @@ const Licenses = () => {
             {/*item*/}
             <div class="border-t-2 border-t-gray-200 cursor-pointer">
               <div class="flex justify-between items-center">
-                <h3 class="text-primary font-bold text-xl">Trade</h3>
+                <h3 class="text-primary font-bold text-xl">Bulk Storage</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -102,13 +97,12 @@ const Licenses = () => {
                   />
                 </svg>
               </div>
-              <div class="text-gray-700">Import,Export,MSME'S, e.t.c..</div>
             </div>
             {/*item*/}
             <div class="border-t-2 border-t-gray-200 cursor-pointer">
               <div class="flex justify-between items-center">
                 <h3 class="text-primary font-bold text-xl">
-                  Driving
+                  Transporters
                 </h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,14 +119,11 @@ const Licenses = () => {
                   />
                 </svg>
               </div>
-              <div class="text-gray-700">
-                Driving License, e.t.c..
-              </div>
             </div>
             {/*item*/}
               <div class="border-t-2 border-t-gray-200 cursor-pointer">
                 <div class="flex justify-between items-center">
-                  <h3 class="text-primary font-bold text-xl">Medical & Health</h3>
+                  <h3 class="text-primary font-bold text-xl">Lubricant Importation</h3>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -147,9 +138,6 @@ const Licenses = () => {
                       d="M8.25 4.5l7.5 7.5-7.5 7.5"
                     />
                   </svg>
-                </div>
-                <div class="text-gray-700">
-                  Pharmacy, e.t.c..
                 </div>
               </div>
           </div>
