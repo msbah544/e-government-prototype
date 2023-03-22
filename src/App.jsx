@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Licenses from "./pages/Licenses";
 import Petroleum_Licenses from "./pages/Petroleum_Licenses";
 import ApplicationDocumentsRetailer from "./pages/ApplicationDocumentsRetailer";
+import RetailersQuestionaire from "./pages/RetailersQuestionaire";
 import Login from "./pages/Login";
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           element={<ApplicationDocumentsRetailer />}
         />
         <Route path="/login" element={<Login />} />
+        <Route path="/questionaire" element={<RetailersQuestionaire />} />
       </Routes>
     </BrowserRouter>
   );
