@@ -3,13 +3,29 @@ import { Link } from "react-router-dom";
 import Top from "../components/Top";
 import Accessibility from "../components/Accessibility";
 import Footer from "../components/Footer";
-import Workflow from "../components/Workflow";
+import Workflow from "../components/Workflow-Circle";
+import { useQuestionaireContext } from "../hooks/useQuestionaireContext";
 
 const Login = () => {
+  const { state, dispatch } = useQuestionaireContext();
+
+  const updateState = async () => {
+    await dispatch({
+      type: "SHOW1",
+      payload: {
+        q1: true,
+        q2: false,
+        q3: false,
+        q4: false,
+        q5: false,
+        q6: false,
+        q7: false,
+      },
+    });
+  };
   return (
     <div>
       <Top />
-      <Workflow />
       <main className="px-52 py-20">
         <div>
           <h3 class="pb-4 font-bold text-2xl py-5 font-body">
@@ -49,6 +65,7 @@ const Login = () => {
             <div className="block pt-10">
               <div className="">
                 <Link
+                  onClick={updateState}
                   to={`/questionaire`}
                   className="p-5 bg-primary text-white hover:bg-dark transition ease-out font-bold"
                 >

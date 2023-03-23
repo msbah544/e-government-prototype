@@ -4,11 +4,11 @@ import headset from "../img/headset.png";
 
 const Accessibility = () => {
   return (
-    <div class="px-52 pb-28 flex justify-between items-center pt-28">
-      <div class="rounded-full p-3 cursor-pointer shadow-lg">
+    <div className="px-52 pb-28 flex justify-between items-center pt-28">
+      <div className="rounded-full p-3 cursor-pointer shadow-lg">
         <img src={access} alt="accessibility logo" />
       </div>
-      <div class="rounded-full p-2 cursor-pointer shadow-lg">
+      <div className="rounded-full p-2 cursor-pointer shadow-lg">
         <img src={headset} alt="headset logo" />
       </div>
     </div>
